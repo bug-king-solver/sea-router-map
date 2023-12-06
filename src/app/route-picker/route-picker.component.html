@@ -1,0 +1,6 @@
+<!-- src/app/route-picker/route-picker.component.html -->
+<select #routeSelector (change)="selectRoute(routeSelector.value)">
+    <option value="">Select a route</option>
+    <option *ngFor="let route of routes" [value]="route.route_id">{{route.from_port}} to {{route.to_port}}</option>
+  </select>
+  

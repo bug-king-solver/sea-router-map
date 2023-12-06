@@ -1,0 +1,12 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Add scrolling to the entire page if needed */
+  }
+  
+  /* Assign equal height to your components */
+  app-route-picker, app-map, app-graph {
+    height: 33.33%; /* Divide 100% by your number of components */
+    box-sizing: border-box; /* Include padding and border in element's total height and width */
+  }
